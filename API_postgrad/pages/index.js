@@ -1,25 +1,36 @@
 import Layout from '../components/MyLayout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
+import { Icon, Card, Image,Header } from 'semantic-ui-react'
+
 
 const Index = props => (
   <Layout>
-    <h1>FILMS</h1>
-    <ul>
-      {props.films.map(film => (
-
-        <li key={film.id}>
-          <h2>{film.title}</h2>
-    
-          <p>Release Date: { film.release_date}</p>
-          <p>Score: { film. rt_score}</p>
-          <Link href="/p/[id]" as={`/p/${film.id}`}>
+     <Header as='h2'><Icon name='film'size='large' color='red' />MOVIES</Header>
+    <Card.Group stackable itemsPerRow='4' centered >
+    {props.films.map(film => (
+      <Card color='orange'>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='large'
+          src='https://s3-eu-west-1.amazonaws.com/static.melkweg.nl/uploads/images/scaled/event_header/12927'
+        />
+        <Card.Header >{film.title}</Card.Header>
+        <Card.Meta>Release Date: { film.release_date}</Card.Meta>
+        <Card.Description>
+        Score:{ film. rt_score}
+        </Card.Description>
+        <Link href="/p/[id]" as={`/p/${film.id}`} >
             <a>More Info</a>
           </Link>
-        </li>
-        
-      ))}
-    </ul>
+      </Card.Content>
+    </Card>
+    ))}
+        </Card.Group>
+    
+     
+    
   </Layout>
 );
 

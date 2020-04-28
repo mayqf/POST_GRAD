@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import { Input,Container} from 'semantic-ui-react'
 
 const locations = [
 ];
@@ -19,12 +20,15 @@ export default function Search(props) {
 
   return (
     <div className="App">
-      <input
-        type="text"
-        placeholder="Search locations..."
-        value={searchTerm}
-        onChange={handleChange}
-      />
+      <Container ><Input
+    icon={{ name: 'search', circular: true, link: true }}
+    placeholder='Search locations...'
+    value={searchTerm}
+    onChange={handleChange} 
+    size='big' fluid
+  /></Container>
+      
+     
       {searchTerm ? 
       <ul>
       {searchResults.map(item => (

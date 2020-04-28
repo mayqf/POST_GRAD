@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/hackyourfuture/Desktop/API_postgrad/Head.js";
+var _jsxFileName = "/Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/Head.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -146,27 +146,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/hackyourfuture/Desktop/API_postgrad/components/Header.js";
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
+  marginBottom: 50
 };
 function Header() {
   return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 5
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
+    name: "home",
+    size: "large",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("a", {
@@ -174,10 +187,17 @@ function Header() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 14,
       columnNumber: 9
     }
-  }, "Home")));
+  }, "Home")), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 7
+    }
+  }));
 }
 
 /***/ }),
@@ -196,7 +216,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Head */ "./Head.js");
-var _jsxFileName = "/Users/hackyourfuture/Desktop/API_postgrad/components/MyLayout.js";
+var _jsxFileName = "/Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/components/MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -204,7 +224,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const layoutStyle = {
   margin: 20,
   padding: 20,
-  border: '1px solid #DDD'
+  border: '5px solid #DDD'
 };
 function Layout(props) {
   return __jsx("div", {
@@ -1925,9 +1945,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/hackyourfuture/Desktop/API_postgrad/pages/index.js";
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "/Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1936,69 +1959,100 @@ const Index = props => __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 8,
     columnNumber: 3
   }
-}, __jsx("h1", {
+}, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Header"], {
+  as: "h2",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
+    columnNumber: 6
+  }
+}, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+  name: "film",
+  size: "large",
+  color: "red",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 22
+  }
+}), "MOVIES"), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"].Group, {
+  stackable: true,
+  itemsPerRow: "4",
+  centered: true,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
     columnNumber: 5
   }
-}, "FILMS"), __jsx("ul", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 5
-  }
-}, props.films.map(film => __jsx("li", {
-  key: film.id,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 9
-  }
-}, __jsx("h2", {
+}, props.films.map(film => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"], {
+  color: "orange",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12,
-    columnNumber: 11
+    columnNumber: 7
   }
-}, film.title), __jsx("p", {
+}, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"].Content, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 7
+  }
+}, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Image"], {
+  floated: "right",
+  size: "large",
+  src: "https://s3-eu-west-1.amazonaws.com/static.melkweg.nl/uploads/images/scaled/event_header/12927",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 14,
-    columnNumber: 11
+    columnNumber: 9
   }
-}, "Release Date: ", film.release_date), __jsx("p", {
+}), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"].Header, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 11
+    lineNumber: 19,
+    columnNumber: 9
   }
-}, "Score: ", film.rt_score), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+}, film.title), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"].Meta, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 9
+  }
+}, "Release Date: ", film.release_date), __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Card"].Description, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 9
+  }
+}, "Score:", film.rt_score), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: "/p/[id]",
   as: `/p/${film.id}`,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 11
+    lineNumber: 24,
+    columnNumber: 9
   }
 }, __jsx("a", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17,
+    lineNumber: 25,
     columnNumber: 13
   }
-}, "More Info"))))));
+}, "More Info")))))));
 
 Index.getInitialProps = async function () {
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://ghibliapi.herokuapp.com/films');
@@ -2020,7 +2074,7 @@ Index.getInitialProps = async function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/hackyourfuture/Desktop/API_postgrad/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2088,6 +2142,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "semantic-ui-react":
+/*!************************************!*\
+  !*** external "semantic-ui-react" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("semantic-ui-react");
 
 /***/ }),
 

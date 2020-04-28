@@ -8,7 +8,7 @@ import { Card } from 'semantic-ui-react'
 
 const Film = props => (
   <Layout>
-    <Card>
+    <Card size='big' color='yellow' centered>
     <Card.Content>
       <Card.Header>{props.film.title}</Card.Header>
       <Card.Meta>
@@ -19,20 +19,20 @@ const Film = props => (
       </Card.Description>
     </Card.Content>
   </Card>
-    <Search locations={props.locationsNames}/>
-    <h1>LOCATIONS</h1>
-    <ul>
-      {props.locations.map(location=> (
 
-        <li key={location.id}>
-        
-          <Link href="/l/[id]" as={`/l/${location.id}`}>
+    <Search locations={props.locationsNames}/>
+    <h1 >LOCATIONS</h1>
+    <Card.Group stackable itemsPerRow='8' >
+       {props.locations.map(location=>(
+         <Card>
+         <Card.Content>
+         <Link href="/l/[id]" as={`/l/${location.id}`}>
             <a>{location.name}</a>
           </Link>
-        </li>
-        
-      ))}
-    </ul> 
+         </Card.Content>
+       </Card>
+       ))} 
+     </Card.Group>
   </Layout>
 );
 

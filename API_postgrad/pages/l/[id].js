@@ -1,14 +1,23 @@
 import Layout from '../../components/MyLayout';
 import fetch from 'isomorphic-unfetch';
-import Link from 'next/link';
+import { Card} from 'semantic-ui-react'
 
 const Film = props => (
   <Layout>
-
-    <h1>LOCATION DETAILS</h1>
-    <p> Climate:{props.location.climate}</p>
-    <p> Terrain:{props.location.terrain}</p>
-    <p> Surface Water:{props.location.surface_water}</p>
+    <Card size='big' color='blue' >
+    <Card.Content>
+      <Card.Header>LOCATION DETAILS</Card.Header>
+      <Card.Description>
+      Climate : {props.location.climate}
+      </Card.Description>
+      <Card.Description>
+      Terrain : {props.location.terrain}
+      </Card.Description>
+      <Card.Description>
+      Surface Water  : {props.location.surface_water}
+      </Card.Description>
+    </Card.Content>
+  </Card>
   </Layout>
 );
 

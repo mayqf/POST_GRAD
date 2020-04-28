@@ -942,7 +942,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/hackyourfuture/Desktop/API_postgrad/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/hackyourfuture/Desktop/POST_GRAD/API_postgrad/.next");
       return error;
     }
   };
