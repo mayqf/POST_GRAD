@@ -1,22 +1,11 @@
-function whatIsInAName(collection, source) {
- 
-  var srcKeys = Object.keys(source);
-
-console.log(srcKeys);
-
-  return collection.filter(function(obj) {
-    for (var i = 0; i < srcKeys.length; i++) {
-      if (
-        !obj.hasOwnProperty(srcKeys[i]) ||
-        obj[srcKeys[i]] !== source[srcKeys[i]]
-      ) {
-      
-        return false;
-      }
+function fearNotLetter(str) {
+  for (var i = 0; i < str.length; i++) {
+    var code = str.charCodeAt(i);
+    if (code !== str.charCodeAt(0) + i) {
+      return String.fromCharCode(code - 1);
     }
-    return true;
-  });
+  }
+  return undefined;
 }
 
-
-console.log (whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+fearNotLetter("abce");
